@@ -52,7 +52,7 @@ pnpm --filter @ozzylabs/preset-base run build
 - `packages/preset-web/` — Astro + React + Tailwind + Vite preset（`@ozzylabs/preset-web`）
 - `packages/preset-cli/` — Node.js CLI preset（`@ozzylabs/preset-cli`）
 - 各 package: `src/index.ts`（Preset export）/ `templates/`（生成ファイル）/ `dist/`（build 出力）
-- `.dev-config/sync.yaml` — commons + skills consumer メタデータ
+- `.commons/sync.yaml` — commons + skills consumer メタデータ
 
 ## 規約
 
