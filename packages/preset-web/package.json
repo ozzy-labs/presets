@@ -1,6 +1,6 @@
 {
   "name": "@ozzylabs/preset-web",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "OzzyLabs web preset for create-agentic-app: Astro + React + Tailwind + Vite. Extends @ozzylabs/preset-base.",
   "type": "module",
   "main": "./dist/index.mjs",
