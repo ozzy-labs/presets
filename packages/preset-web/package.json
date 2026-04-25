@@ -1,0 +1,59 @@
+{
+  "name": "@ozzylabs/preset-web",
+  "version": "0.0.0",
+  "description": "OzzyLabs web preset for create-agentic-app: Astro + React + Tailwind + Vite. Extends @ozzylabs/preset-base.",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "license": "MIT",
+  "author": "ozzy-labs",
+  "homepage": "https://github.com/ozzy-labs/presets/tree/main/packages/preset-web#readme",
+  "bugs": "https://github.com/ozzy-labs/presets/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozzy-labs/presets.git",
+    "directory": "packages/preset-web"
+  },
+  "keywords": [
+    "ozzylabs",
+    "preset",
+    "create-agentic-app",
+    "astro",
+    "react",
+    "tailwind"
+  ],
+  "peerDependencies": {
+    "@ozzylabs/preset-base": "^0.0.0"
+  },
+  "devDependencies": {
+    "@ozzylabs/preset-base": "workspace:*",
+    "tsdown": "^0.21.7",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "presets",
+  "version": "0.0.0",
+  "description": "OzzyLabs CAA preset monorepo (@ozzylabs/preset-base, preset-web, preset-cli)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "lefthook install || true",
+    "build": "pnpm -r --workspace-concurrency=1 run build",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "lint:md": "markdownlint-cli2 '**/*.md' '#**/node_modules' '#CHANGELOG.md' '#packages/*/CHANGELOG.md'",
+    "lint:yaml": "yamllint -c .yamllint.yaml .",
+    "lint:secrets": "gitleaks detect --no-banner",
+    "lint:all": "pnpm run lint && pnpm run lint:md && pnpm run lint:yaml && pnpm run lint:secrets",
+    "test": "pnpm -r run test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "license": "MIT",
+  "author": "ozzy-labs",
+  "homepage": "https://github.com/ozzy-labs/presets#readme",
+  "bugs": "https://github.com/ozzy-labs/presets/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozzy-labs/presets.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0"
+  }
+}
