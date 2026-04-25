@@ -1,5 +1,5 @@
 {
-  "packages/preset-base": "0.0.0",
-  "packages/preset-web": "0.0.0",
-  "packages/preset-cli": "0.0.0"
+  "packages/preset-base": "0.0.1",
+  "packages/preset-web": "0.0.1",
+  "packages/preset-cli": "0.0.1"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@ozzylabs/preset-web",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "OzzyLabs web preset for create-agentic-app: Astro + React + Tailwind + Vite. Extends @ozzylabs/preset-base.",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
@@ -48,7 +48,7 @@
     "tailwind"
   ],
   "peerDependencies": {
-    "@ozzylabs/preset-base": "^0.0.0"
+    "@ozzylabs/preset-base": "^0.0.1"
   },
   "devDependencies": {
     "@ozzylabs/preset-base": "workspace:*",

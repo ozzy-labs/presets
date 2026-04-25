@@ -1,6 +1,6 @@
 {
   "name": "@ozzylabs/preset-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "OzzyLabs Node.js CLI preset for create-agentic-app: tsdown + @clack/prompts + vitest + CLI package.json. Extends @ozzylabs/preset-base.",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
@@ -48,7 +48,7 @@
     "vitest"
   ],
   "peerDependencies": {
-    "@ozzylabs/preset-base": "^0.0.0"
+    "@ozzylabs/preset-base": "^0.0.1"
   },
   "devDependencies": {
     "@ozzylabs/preset-base": "workspace:*",
