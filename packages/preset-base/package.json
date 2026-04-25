@@ -1,6 +1,6 @@
 {
   "name": "@ozzylabs/preset-base",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "OzzyLabs base preset for create-agentic-app: shared linters, formatters, hooks, and editor configuration.",
   "type": "module",
   "main": "./dist/index.mjs",
