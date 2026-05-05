@@ -19,3 +19,5 @@ pinned:
   - biome.json
   - renovate.json
   - .gitignore
+  - .github/workflows/pr-check.yaml
+  - .github/workflows/sync-commons.yaml
