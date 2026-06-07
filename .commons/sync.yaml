@@ -22,4 +22,3 @@ pinned:
   - renovate.json
   - .gitignore
   - .github/workflows/pr-check.yaml
-  - .github/workflows/sync-commons.yaml
